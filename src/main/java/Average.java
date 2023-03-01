@@ -1,4 +1,5 @@
 
+import java.util.*;
 public class Average {
     /**
      * Now that we can get the sum of all numbers in an array, we could also figure out how to get the average of an
@@ -18,6 +19,14 @@ public class Average {
      * @return the average of all the values of nums.
      */
     public double getAvg(int[] nums){
-        return 0;
+        int sum = 0;
+       
+        for(int i = 0; i < nums.length; i++){
+            sum = sum + nums[i];
+        }
+        double avg = (double) sum / nums.length;
+
+
+        return avg;
     }
 }
